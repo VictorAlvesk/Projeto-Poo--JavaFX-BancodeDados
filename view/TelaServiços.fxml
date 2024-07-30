@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <SplitPane dividerPositions="0.6" layoutY="-1.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+               <items>
+                  <AnchorPane onKeyTyped="#limparLabel" prefHeight="294.0" prefWidth="798.0" SplitPane.resizableWithParent="false">
+                     <children>
+                        <Button cancelButton="true" mnemonicParsing="false" mouseTransparent="true" text="REGISTRO DE SERVIÇOS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label alignment="CENTER_RIGHT" layoutX="177.0" layoutY="81.0" prefHeight="20.0" prefWidth="72.0" text="Nome:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="nome" layoutX="252.0" layoutY="78.0" onKeyTyped="#limparLabel" prefHeight="25.0" prefWidth="294.0" promptText="Nome do Usuário" />
+                        <Label alignment="CENTER_RIGHT" layoutX="177.0" layoutY="119.0" prefHeight="17.0" prefWidth="72.0" text="CPF:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="cpf" layoutX="256.0" layoutY="110.0" onKeyTyped="#limparLabel" prefHeight="34.0" prefWidth="294.0" promptText="Digite seu CPF" wrapText="true" />
+                        <Label alignment="CENTER_RIGHT" layoutX="69.0" layoutY="168.0" prefHeight="20.0" prefWidth="180.0" text="Preço da Passagem:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="preco" layoutX="252.0" layoutY="164.0" onKeyTyped="#limparLabel" prefHeight="25.0" prefWidth="294.0" promptText="R$ 00,00" />
+                        <Button fx:id="buttonRegistrar" layoutX="331.0" layoutY="218.0" mnemonicParsing="false" onAction="#buttonRegistrarClicked" text=" Registrar Viagem" />
+                        <Button fx:id="buttonDeletarID" layoutX="355.0" layoutY="280.0" mnemonicParsing="false" onAction="#buttonDeletarIDClicked" text="Deletar ID" />
+                        <Label alignment="CENTER_RIGHT" layoutX="209.0" layoutY="47.0" prefHeight="20.0" prefWidth="157.0" text="Código da Viagem:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="id" layoutX="373.0" layoutY="44.0" onKeyTyped="#carregarID" prefHeight="25.0" prefWidth="52.0" />
+                        <Button fx:id="buttonAtualizarID" layoutX="351.0" layoutY="247.0" mnemonicParsing="false" onAction="#atualizarID" text="Atualizar ID" />
+                        <Button fx:id="buttonLimpar" layoutX="363.0" layoutY="316.0" mnemonicParsing="false" onAction="#buttonLimparClicked" text="Limpar" />
+                        <Label fx:id="labelMensagem" alignment="CENTER" layoutX="183.0" layoutY="221.0" prefHeight="20.0" prefWidth="423.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="table" fixedCellSize="0.0" maxWidth="800.0" minHeight="200.0" minWidth="500.0" prefHeight="288.0" prefWidth="798.0">
+                    <columns>
+                        <TableColumn fx:id="columnId" minWidth="100.0" prefWidth="44.0" resizable="false" text="Código" />
+                      <TableColumn fx:id="columnNome" maxWidth="180.0" minWidth="300.0" prefWidth="200.0" text="Nome do Usuário" />
+                      <TableColumn fx:id="columnDescricao" maxWidth="470.0" minWidth="100.0" prefWidth="300.0" text="CPF" />
+                        <TableColumn fx:id="columnPreco" maxWidth="104.0" minWidth="60.0" prefWidth="104.0" text="PREÇO" />
+                    </columns>
+                  </TableView>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+      <Accordion>
+        <panes>
+          <TitledPane animated="false" text="untitled 1" />
+          <TitledPane animated="false" text="untitled 2" />
+        </panes>
+      </Accordion>
+   </children>
+</VBox>

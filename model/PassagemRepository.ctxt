@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=PassagemRepository
+comment1.params=database
+comment1.target=PassagemRepository(Database)
+comment1.text=\r\n\ Construtor\ de\ ServicoRepository\r\n\ \r\n\ @author\ Matheus\ Teles\r\n\ @author\ Jo\u00E3o\ Vitor\r\n\ @author\ Victor\ Alves\r\n\ @author\ Yan\ Santos\r\n\ @author\ Gabriel\ Eduardo\r\n\ @\ database\ o\ banco\ de\ dados\ sobre\ o\ qual\ o\ reposit\u00F3rio\ vai\ operar.\r\n
+comment2.params=database
+comment2.target=void\ setDatabase(Database)
+comment2.text=\r\n\ seleciona\ o\ banco\ de\ dados\ sobre\ o\ qual\ o\ reposit\u00F3rio\ vai\ operar.\r\n\ \r\n\ @param\ database\ novo\ banco\ de\ dados\ a\ ser\ operado.\r\n
+comment3.params=servico
+comment3.target=Passagem1\ create(Passagem1)
+comment3.text=\r\n\ Salva\ uma\ inst\u00E2ncia\ de\ Servico\ no\ banco\ de\ dados\r\n\ \r\n\ @param\ servico\ inst\u00E2ncia\ de\ Servico\r\n
+comment4.params=servico
+comment4.target=void\ update(Passagem1)
+comment4.text=\r\n\ Substitui\ a\ inst\u00E2ncia\ salva\ no\ banco\ de\ dados\ que\ possui\ o\ mesmo\ ID\ que\ a\ do\ par\u00E2metro\r\n\ pela\ inst\u00E2ncia\ do\ par\u00E2metro;\r\n\ \r\n\ @param\ servico\ inst\u00E2ncia\ de\ servico\ a\ ser\ atribu\u00EDda\r\n
+comment5.params=id
+comment5.target=void\ deleteById(int)
+comment5.text=\r\n\ Deleta\ a\ inst\u00E2ncia\ salva\ no\ banco\ de\ dados\ que\ possui\ o\ ID\ passado\ no\ par\u00E2metro.\r\n\ \r\n\ @param\ id\ id\ da\ inst\u00E2ncia\ a\ ser\ deletada.\r\n
+comment6.params=
+comment6.target=int\ numServicos()
+comment6.text=\r\n\ Retorna\ o\ n\u00FAmero\ de\ inst\u00E2ncias\ de\ Servicos\ salvas\ no\ banco\ de\ dados.\r\n
+comment7.params=id
+comment7.target=Passagem1\ loadFromId(int)
+comment7.text=\r\n\ Retorna\ a\ inst\u00E2ncia\ de\ Servico\ salva\ no\ banco\ de\ dados\ que\ possui\ o\ ID\ do\ par\u00E2metro.\r\n\ \r\n\ @param\ id\ id\ da\ inst\u00E2ncia\ a\ ser\ retornada.\r\n
+comment8.params=
+comment8.target=java.util.List\ loadAll()
+comment8.text=\r\n\ Retorna\ uma\ lista\ com\ todas\ as\ inst\u00E2ncia\ de\ Servicos\ salvas\ no\ banco\ de\ dados.\r\n
+numComments=9

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Database
+comment0.text=\r\n\ \ Class\:\ Database\ Class\r\n\ \ \ \r\n\ @autor\ Matheus\ Teles\r\n\ @autor\ Jo\u00E3o\ Vitor\r\n\ @autor\ Victor\ Alves\r\n\ @autor\ Yan\ Santos\r\n\ @autor\ Gabriel\ Eduardo\r\n
+comment1.params=databaseName
+comment1.target=Database(java.lang.String)
+comment2.params=
+comment2.target=com.j256.ormlite.jdbc.JdbcConnectionSource\ getConnection()
+comment3.params=
+comment3.target=void\ close()
+numComments=4

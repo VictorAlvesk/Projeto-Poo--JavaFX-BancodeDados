@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Passagem1
+comment1.params=
+comment1.target=Passagem1()
+comment1.text=\r\n\ \ Classe\:\ Servico\ de\ Passagens\ Class\r\n\ \r\n\ @author\ Matheus\ Teles\r\n\ @author\ Jo\u00E3o\ Vitor\r\n\ @author\ Victor\ Alves\r\n\ @author\ Yan\ Santos\r\n\ @author\ Gabriel\ Eduardo\r\n
+comment10.params=
+comment10.target=float\ getPreco()
+comment2.params=nome\ descricao\ preco
+comment2.target=Passagem1(java.lang.String,\ java.lang.String,\ float)
+comment3.params=id
+comment3.target=void\ setId(int)
+comment4.params=
+comment4.target=int\ getId()
+comment5.params=nome
+comment5.target=void\ setNome(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getNome()
+comment7.params=descricao
+comment7.target=void\ setDescricao(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ getDescricao()
+comment9.params=preco
+comment9.target=void\ setPreco(float)
+numComments=11
